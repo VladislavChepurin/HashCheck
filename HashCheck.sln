@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashCheck", "HashCheck\HashCheck.csproj", "{4656C718-DC0A-4530-9849-2682B5A09E95}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HashCheckApp", "HashCheckApp\HashCheckApp.vdproj", "{F2A01BF9-90A3-4D4A-AD05-DA0FECD893BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4656C718-DC0A-4530-9849-2682B5A09E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4656C718-DC0A-4530-9849-2682B5A09E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4656C718-DC0A-4530-9849-2682B5A09E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4656C718-DC0A-4530-9849-2682B5A09E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A01BF9-90A3-4D4A-AD05-DA0FECD893BB}.Debug|Any CPU.ActiveCfg = Debug
+		{F2A01BF9-90A3-4D4A-AD05-DA0FECD893BB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AD06CF2-A032-48A6-921C-092E5B1D5C2A}
+	EndGlobalSection
+EndGlobal
