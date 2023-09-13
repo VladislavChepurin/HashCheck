@@ -13,40 +13,76 @@ namespace HashCheck
 
         public string HashMD5()
         {
-            using (FileStream fStream = File.OpenRead(FileLocation))
+            try
             {
-                return GetHash<MD5>(fStream);
-            };
+                using (FileStream fStream = File.OpenRead(FileLocation))
+                {
+                    return GetHash<MD5>(fStream);
+                };
+            }
+            catch (IOException)
+            {
+                return "Файл заблокирован или закрыт, закройте программу в которой открыт файл и попробуйте еще раз.";
+            }
         }
 
         public string HashSHA1()
         {
-            using (FileStream fStream = File.OpenRead(FileLocation))
+            try
             {
-                return GetHash<SHA1>(fStream);
-            };
+                using (FileStream fStream = File.OpenRead(FileLocation))
+                {
+                    return GetHash<SHA1>(fStream);
+                };
+            }
+            catch (IOException)
+            {
+                return "Файл заблокирован или закрыт, закройте программу в которой открыт файл и попробуйте еще раз.";
+            }
         }
 
         public string HashSHA256()
         {
-            using (FileStream fStream = File.OpenRead(FileLocation))
-            {                
-                return GetHash<SHA256>(fStream);
-            };
+            try
+            {
+                using (FileStream fStream = File.OpenRead(FileLocation))
+                {
+                    return GetHash<SHA256>(fStream);
+                };
+            }
+            catch (IOException)
+            {
+                return "Файл заблокирован или закрыт, закройте программу в которой открыт файл и попробуйте еще раз.";
+            }
         }
+
         public string HashSHA384()
         {
-            using (FileStream fStream = File.OpenRead(FileLocation))
+            try
             {
-                return GetHash<SHA384>(fStream);
+                using (FileStream fStream = File.OpenRead(FileLocation))
+                {
+                    return GetHash<SHA384>(fStream);
+                };
+            }
+            catch (IOException)
+            {
+                return "Файл заблокирован или закрыт, закройте программу в которой открыт файл и попробуйте еще раз.";
             };
         }
 
         public string HashSHA512()
         {
-            using (FileStream fStream = File.OpenRead(FileLocation))
+            try
             {
-                return GetHash<SHA512>(fStream);
+                using (FileStream fStream = File.OpenRead(FileLocation))
+                {
+                    return GetHash<SHA512>(fStream);
+                };
+            }
+            catch (IOException)
+            {
+                return "Файл заблокирован или закрыт, закройте программу в которой открыт файл и попробуйте еще раз.";
             };
         }
                 

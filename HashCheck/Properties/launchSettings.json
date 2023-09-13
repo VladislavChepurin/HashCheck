@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HashCheck": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\chepu\\Desktop\\Лист_Microsoft_Excel.xlsx All"
+    }
+  }
+}
