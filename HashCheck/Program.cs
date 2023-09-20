@@ -176,9 +176,6 @@ namespace HashCheck
 
                 builder.Append("Дата изменения файла: ");
                 builder.AppendLine(fileInfo.LastWriteTime.ToString());
-
-                builder.Append("Дата изменения файла: ");
-                builder.AppendLine(fileInfo.LastWriteTime.ToString());
                                 
                 return builder.ToString();
             }
